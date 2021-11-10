@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'primeiroProjeto';
+  textoPadraoPai = 'Passando valores do pai pro filho';
+  textoDoFilho = '';
+
+  setTextoPai(texto: string){
+    this.textoDoFilho = texto;
+  }
 }

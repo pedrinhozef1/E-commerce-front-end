@@ -1,0 +1,14 @@
+<div class="col-md-3">
+    <button id="btCadastra" (click)="cadastrarCategoria()" class="btn btn-success">Cadastrar Categoria</button>
+</div>
+<div class="col-md-12" *ngFor="let categoria of categorias.conteudo">
+    <div class="col-md-2">
+        {{categoria.id}}
+    </div>
+    <div class="col-md-6">
+        {{categoria.descricao}}
+    </div>
+    <div class="col-md-2">
+        <button class="btn btn-primary"(click)="visualizar(categoria)">Visualizar</button>
+    </div>
+</div>
